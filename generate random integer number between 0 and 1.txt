@@ -1,0 +1,7 @@
+generate random integer number between 0 and 1
+
+import numpy as np
+np.random.seed(123)
+# Randomly generate 0 or 1
+coin = np.random.randint(0,2)
+print(coin) 

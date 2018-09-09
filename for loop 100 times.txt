@@ -1,0 +1,5 @@
+for loop 100 times
+
+# Use function range to generate 100 steps
+for x in range(100);
+	print(x)

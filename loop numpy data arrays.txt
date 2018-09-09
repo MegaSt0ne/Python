@@ -1,0 +1,11 @@
+loop numpy data arrays
+
+a = [1,2,3,4,5]
+b = [a,b,c,d,b]
+
+np_array = np.array([a,b])
+
+# loop throught the 2-D numpy array
+for a in np.nditer(np_array):
+	print(a)
+

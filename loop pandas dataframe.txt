@@ -1,0 +1,14 @@
+loop pandas dataframe
+
+import pandas as pd
+brics = pd.read_csv("brics.csv", index_col = 0)
+
+# the function of example 1 and example 2 are the same
+# example 1:
+for lab, row in brics.iterrows() :
+	brics.loc[lab, "name_length"] = len(row["country"])
+print(brics)
+
+
+# example 2:
+brics["name_length"] = brics["country"].apply(len)
